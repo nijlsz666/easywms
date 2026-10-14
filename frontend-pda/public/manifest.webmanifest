@@ -1,0 +1,15 @@
+{
+  "name": "EasyWMS PDA 仓储作业",
+  "short_name": "EasyWMS PDA",
+  "description": "跨平台 H5 仓储扫描与现场作业终端",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f6fb",
+  "theme_color": "#f3f6fb",
+  "icons": [
+    { "src": "./pda-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

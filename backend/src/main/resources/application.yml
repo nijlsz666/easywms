@@ -1,0 +1,28 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: easywms-api
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/easywms?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jackson:
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+springdoc:
+  swagger-ui:
+    path: /docs
+  api-docs:
+    path: /openapi.json
+easywms:
+  jwt:
+    secret: ${JWT_SECRET:change-this-secret-to-at-least-32-characters-long}
+    expiration-seconds: ${JWT_EXPIRATION_SECONDS:28800}
+  cors:
+    allowed-origin-patterns: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174}
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true

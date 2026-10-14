@@ -1,0 +1,22 @@
+# Java build output
+backend/target/
+
+# Node build output
+node_modules/
+frontend-web/node_modules
+frontend-web/dist/
+frontend-web/*.tsbuildinfo
+frontend-pda/node_modules
+frontend-pda/dist/
+frontend-pda/*.tsbuildinfo
+
+# Local configuration and environment secrets
+.env
+.env.*
+!.env.example
+frontend-web/.env
+frontend-web/.env.*
+!frontend-web/.env.example
+frontend-pda/.env
+frontend-pda/.env.*
+!frontend-pda/.env.example
